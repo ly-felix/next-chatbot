@@ -7,10 +7,12 @@ import { darcula } from "react-syntax-highlighter/dist/cjs/styles/prism";
 export default function Message({text: initialText, avatar, idx, author}) {
   const [text, setText] = useState(author === "ai" ? "" : initialText);
   const bgColorClass = idx % 2 === 0 ? "bg-slate-100" : "bg-slate-200";
-
+  console.log("initialText::\n"+initialText)
   useEffect(() => {
+    console.log(initialText.length, text.length);
     const timeout = setTimeout(() => {
       setText(initialText.slice(0, text.length + 1));
+      // setText(initialText);
     }, 10);
 
     return () => clearTimeout(timeout);

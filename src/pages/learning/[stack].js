@@ -7,10 +7,7 @@ import { useEffect, useRef, useState } from "react";
 import useUser from "@/hooks/useUser";
 
 const SESSION_KEYS = [
-  "u1-2023-04-13T15:36:20.424Z",
-  "u2-2023-04-13T15:36:20.123Z",
-  "u3-2023-04-13T15:36:20.421Z",
-  "u4-2023-04-13T15:36:20.999Z",
+  "test_user",
 ];
 
 export default function Stack({stack, stackKey}) {
