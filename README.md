@@ -1,6 +1,6 @@
-# Next JS with ChatGPT integration APP 
+# Next JS with LLAMA2 integration APP 
 
-This is an example Next JS with ChatGPT integration app used in the Eincode Youtube Tutorial [youtube tutorial](https://youtu.be/dmM83DhzE98). It uses the [Next.js](https://nextjs.org/) framework with [React](https://reactjs.org/). Check out the tutorial or follow the instructions below to get set up.
+This is an example Next JS with LLAMA2 integration app. It uses the [Next.js](https://nextjs.org/) framework with [React](https://reactjs.org/). Check out the tutorial or follow the instructions below to get set up.
 
 ## Setup
 
@@ -11,7 +11,7 @@ This is an example Next JS with ChatGPT integration app used in the Eincode Yout
 3. Navigate into the project directory
 
    ```bash
-   $ cd nextJS-chatGPT
+   $ cd next-chatbot
    ```
 
 4. Install the requirements
@@ -20,16 +20,20 @@ This is an example Next JS with ChatGPT integration app used in the Eincode Yout
    $ npm install
    ```
 
-5. Create a ```.env``` file to setup API KEY to OpenAI (explained in the Course)
+5. Create a ```.env``` file to setup LAMINI TOKEN to OpenAI 
 
-6. Add your [API key](https://platform.openai.com/account/api-keys) to the newly created `.env` file
+6. Add your [LAMINI_TOKEN](https://lamini-ai.github.io/) to the newly created `.env` file
 
-```OPENAI_API_KEY=YOUR_KEY ```
+```LAMINI_TOKEN=YOUR_TOKEN ```
 
-7. Run the app
+7. Add your [SECRET_COOKIE_PASSWORD]to the `.env` file
+
+```SECRET_COOKIE_PASSWORD=A_RANDOM_SECRET ```
+
+8. Run the app
 
    ```bash
    $ npm run dev
    ```
 
-You should now be able to access the app at [http://localhost:3000](http://localhost:3000)! For the full context behind this example app, check out the full course [tutorial](https://academy.eincode.com/courses/next-js-with-chatgpt-development-guide).
+You should now be able to access the app at [http://localhost:3000](http://localhost:3000)! 
